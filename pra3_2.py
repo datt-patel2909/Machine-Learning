@@ -4,7 +4,6 @@ from sklearn.preprocessing import StandardScaler
 
 iris = load_iris()
 X = iris.data
-
 X_scaled = StandardScaler().fit_transform(X)
 
 pca = PCA(n_components=2)
